@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Variable Updated by JS </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>CSS Variable Updated Using <span>JavaScript</span></h2>
+
+  <div class="container">
+    <label for="spacing">Spacing: </label>
+    <input 
+      type="range" 
+      name="spacing" 
+      value="10" 
+      id="spacing" 
+      min="10" 
+      max="300" 
+      data-sizing="px"
+    >
+
+    <label for="blur">Blur: </label>
+    <input 
+      type="range" 
+      name="blur" 
+      value="10" 
+      id="blur" 
+      min="0" 
+      max="100" 
+      data-sizing="px"
+    >
+
+    <label for="base">Base Color</label>
+    <input 
+      type="color" 
+      name="base" 
+      value="#FFA500" 
+      id="base" 
+    >
+  </div>
+  <img src="images.jpg">
+  <script src="CssVariable.js"></script>
+</body>
+</html>
